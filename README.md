@@ -7,10 +7,10 @@ All git branches are merged into master
 - rock/set-env-from-deploy - set NODE_ENV to develop for local development and set it to production on Cloud Run
 
 ## Build image and deploy to Cloud Run
-- ```bash
+```bash
 gcloud builds submit --tag gcr.io/[PROJECT-ID]/nest-cloud-run
 ```
-- ```bash
+```bash
 gcloud beta run deploy --image gcr.io/[PROJECT-ID]/nest-cloud-run --platform managed
 ```
 - To set environment variables during deployment: 
