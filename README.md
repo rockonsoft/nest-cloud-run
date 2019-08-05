@@ -1,6 +1,9 @@
 # Nest Cloud Run
 Runs a simple nest.js api in Google Cloud Run
 
+### Branches
+All git branches are merged into master
+* rock//run-in-cloud - the basic nest app running with a default controller and a process.env dump
 
 ## Build image and deploy to Cloud Run
 gcloud builds submit --tag gcr.io/[PROJECT-ID]/nest-cloud-run
