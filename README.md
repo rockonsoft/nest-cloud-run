@@ -3,12 +3,20 @@ Runs a simple nest.js api in Google Cloud Run
 
 ### Branches
 All git branches are merged into master
-* rock//run-in-cloud - the basic nest app running with a default controller and a process.env dump
+- rock/run-in-cloud - the basic nest app running with a default controller and a process.env dump
+- rock/set-env-from-deploy - set NODE_ENV to develop for local development and set it to production on Cloud Run
 
 ## Build image and deploy to Cloud Run
+```bash
 gcloud builds submit --tag gcr.io/[PROJECT-ID]/nest-cloud-run
+```
+```bash
 gcloud beta run deploy --image gcr.io/[PROJECT-ID]/nest-cloud-run --platform managed
-
+```
+- To set environment variables during deployment: 
+```bash
+gcloud beta run deploy --image gcr.io/[PROJECT-ID]/nest-cloud-run --platform managed -update-env-vars NODE_ENV=production
+```
 #Nest Boilerplate Readme
 
 ## Installation
