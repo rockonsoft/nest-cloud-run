@@ -10,6 +10,10 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+#env
+.env
+nestfirestore.json
+
 # OS
 .DS_Store
 
