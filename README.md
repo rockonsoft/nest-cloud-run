@@ -8,7 +8,7 @@ All git branches are merged into master
 
 - rock/run-in-cloud - the basic nest app running with a default controller and a process.env dump
 - rock/set-env-from-deploy - set NODE_ENV to develop for local development and set it to production on Cloud Run
-- rock/with-firebase - add firebase usable from development environment and from Cloud Run
+- rock/firestore - add firebase usable from development environment and from Cloud Run
 
 ## Build image and deploy to Cloud Run
 
@@ -56,7 +56,7 @@ When this is deployed in cloud run, the key file and the .env file is not deploy
 Added a firestore service that initializes the firestore store and create objects in firestore.
 Create a contoller for users (could be any CRUD type) that on POST will create an object in firestore.
 
-#Nest Boilerplate Readme
+# Nest
 
 ## Installation
 
@@ -89,17 +89,3 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
