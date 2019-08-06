@@ -1,0 +1,5 @@
+.env
+nestfirestore.json
+.prettierrc
+.vscode
+README.md
